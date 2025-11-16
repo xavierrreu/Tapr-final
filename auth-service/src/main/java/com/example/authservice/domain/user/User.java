@@ -31,7 +31,7 @@ public class User {
     private UUID id;
 
     @Column(nullable = false)
-    private String name;
+    private String nome;
 
     @Column(nullable = false)
     private String password;
@@ -43,11 +43,23 @@ public class User {
     @Embedded
     private Role role;
 
-    public User(String name, Email email, RoleType role, String pw) {
+    private String linkedin;
+    private String github;
+    private String qualificacoes;
+    private String historicoProfissional;
+    private String areasDeInteresse;
+
+    public User(String name, Email email, RoleType role, String pw, String linkedin, String github, String qualificacoes, 
+                String historicoprofissional, String areasdeinteresse) {
         this.name = name;
         this.email = email;
         this.role = Role.of(role);
         this.password = pw;
+        this.linkedin = linkedin;
+        this.github = github;
+        this.qualificacoes = qualificacoes;
+        this.historicoProfissional = historicoprofissional;
+        this.areasDeInteresse = areasdeinteresse;
     }
 
     public void promoteTo(RoleType role) {
