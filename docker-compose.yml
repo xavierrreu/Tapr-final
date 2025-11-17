@@ -51,6 +51,19 @@ services:
      - service-discovery
     networks:
      - app-network
+  projeto-service:
+    build:
+      context: ./projeto-service
+    container_name: projeto-service
+    ports:
+      - "8086:8080"
+    volumes:
+      - ./projeto-service:/app
+      - ~/.m2:/root/.m2
+    depends_on:
+      - service-discovery
+    networks:
+      - app-network
   # nginx:
   #   image: nginx:latest
   #   container_name: nginx
