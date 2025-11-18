@@ -20,8 +20,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @RequestMapping("/users")
 public class UserController {
-    // private final ListUserHandler listUserHandler;
-    // private final RegisterUserHandler registerUserHandler;
+    private final ListUserHandler listUserHandler;
+    private final RegisterUserHandler registerUserHandler;
     private final GetUserByIdHandler getUserByIdHandler;
 
     @GetMapping
