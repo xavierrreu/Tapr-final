@@ -43,23 +43,12 @@ public class User {
     @Embedded
     private Role role;
 
-    private String linkedin;
-    private String github;
-    private String qualificacoes;
-    private String historicoProfissional;
-    private String areasDeInteresse;
 
-    public User(String name, Email email, RoleType role, String pw, String linkedin, String github, String qualificacoes, 
-                String historicoprofissional, String areasdeinteresse) {
+    public User(String name, Email email, RoleType role, String pw) {
         this.name = name;
         this.email = email;
         this.role = Role.of(role);
         this.password = pw;
-        this.linkedin = linkedin;
-        this.github = github;
-        this.qualificacoes = qualificacoes;
-        this.historicoProfissional = historicoprofissional;
-        this.areasDeInteresse = areasdeinteresse;
     }
 
     public void promoteTo(RoleType role) {

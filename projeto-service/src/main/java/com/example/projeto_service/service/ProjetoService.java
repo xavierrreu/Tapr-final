@@ -1,7 +1,7 @@
-package com.example.projetoservice.service;
+package com.example.projeto_service.service;
 
-import com.example.projetoservice.domain.projeto.Projeto;
-import com.example.projetoservice.repository.ProjetoRepository;
+import com.example.projeto_service.domain.projeto.Projeto;
+import com.example.projeto_service.repository.ProjetoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

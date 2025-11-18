@@ -1,38 +1,28 @@
 ### API USUARIO - GET 
-GET http://localhost:8080/users
+GET http://localhost:8084/users
 
 ### API USUARIO - POST Content-Type: application/json
-POST http://localhost:8080/api/v1/usuarios
+POST http://localhost:8084/users
 Content-Type: application/json 
 
 {
-    "nome": "roberto_novo", 
-    "password": "roberto_novo", 
-    "email": "roberto@gmail.com",
-    "role": "PRODUTOR", 
-    "linkedin": "PRODUTOR",
-    "github": "PRODUTOR",
-    "historicoProfissional": "não tenho histórico", 
-    "qualificacoes": "lalalala", 
-    "areasDeInteresse": "todas as areas"
+    "name": "artur", 
+    "password": "Huhvasd567", 
+    "email": "artur2@gmail.com",
+    "role": "PRODUTOR"
 }
 
 ### API USUARIO - PUT 
-PUT http://localhost:8080/api/v1/usuarios/1 
+PUT http://localhost:8084/users
 Content-Type: application/json
 
 {
-    "nome": "roberto_novo", 
+    "name": "roberto_novo", 
     "password": "roberto_novo", 
     "email": "roberto@gmail.com",
-    "role": "PRODUTOR", 
-    "linkedin": "PRODUTOR",
-    "github": "PRODUTOR",
-    "historicoProfissional": "não tenho histórico", 
-    "qualificacoes": "lalalala", 
-    "areasDeInteresse": "todas as areas"
+    "role": "PRODUTOR"
 }
 
 ### API USUARIO - DELETE 
-DELETE http://localhost:8080/api/v1/usuarios/1 
+DELETE http://localhost:8084/users/73bb1e0b-29aa-4803-bc1c-c4f52670d043 
 Content-Type: application/json

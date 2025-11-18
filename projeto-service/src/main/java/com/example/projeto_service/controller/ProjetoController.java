@@ -1,7 +1,7 @@
-package com.example.projetoservice.controller;
+package com.example.projeto_service.controller;
 
-import com.example.projetoservice.domain.projeto.Projeto;
-import com.example.projetoservice.service.ProjetoService;
+import com.example.projeto_service.domain.projeto.Projeto;
+import com.example.projeto_service.service.ProjetoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

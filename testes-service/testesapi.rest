@@ -1,0 +1,24 @@
+### API USUARIO - GET 
+GET http://localhost:8085/testes
+
+### API USUARIO - POST 
+POST http://localhost:8085/testes 
+Content-Type: application/json
+
+{
+    "nome": "willian", 
+    "descricao": "willian@gmail.com"
+}
+
+### API USUARIO - PUT 
+PUT http://localhost:8085/testes/58a9446a-7f37-4ee5-978b-ba6818de5177
+Content-Type: application/json
+
+{
+    "nome": "roberto_novo", 
+    "descricao": "roberto@gmail.com"
+}
+
+### API USUARIO - DELETE 
+DELETE http://localhost:8085/testes/f62cebe8-a5c0-4703-a880-c396e5e1d4ef
+Content-Type: application/json
